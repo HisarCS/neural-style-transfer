@@ -43,7 +43,7 @@ def camPreview(previewName, camID, e):
 		key = cv2.waitKey(20)
 		if key == 27:  # exit on ESC
 			break
-		elif int(elapsed)%10==2:
+		elif int(elapsed)%secs_per_slide==2:
 			img_name = "images/content/opencv_frame_{}.jpg".format(img_counter)
 			cv2.imwrite(img_name, frame)
 			img_counter += 1

@@ -5,7 +5,7 @@ window_width = 800
 window_height = 600
 window_name = "Famous Images"
 
-secs_per_slide = 10000 #seconds per slide in milliseconds
+secs_per_slide = 10000 #seconds per slide in milliseconds (If using a CPU, this should be >= 7000 or so depending on the model to allow frame to be stylized in time)
 
 images_path = "/Users/mertgerdan/desktop/pyRepo/pytorch/pytorch-neural-style/main/images/style-images/"
 img_list = []
