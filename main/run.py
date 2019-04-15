@@ -48,7 +48,9 @@ def camPreview(previewName, camID, e):
 			cv2.imwrite(img_name, frame)
 			img_counter += 1
 
-			next_image_index = parent_conn.recv() + 1 #voodoo doodoo
+			# created a Pipe() and set slideshow_final as the parent, camera as the child
+			# in order to access the next image index from the running slideshow
+			next_image_index = parent_conn.recv() + 1 
 			next_image_path = load_img_path(images_path)[next_image_index]
 
 			global style_transfer_process

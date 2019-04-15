@@ -1,12 +1,13 @@
-##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-## Created by: Hang Zhang
-## ECE Department, Rutgers University
-## Email: zhang.hang@rutgers.edu
-## Copyright (c) 2017
-##
-## This source code is licensed under the MIT-style license found in the
-## LICENSE file in the root directory of this source tree 
-##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+###
+# Much of this code is written by Hang Zhang, ECE Department, Rutgers University. I didn't alter it much, I just
+# updated outdated bits here and there, and removed some unused functionality regarding my project, while improving 
+# documentation based on some errors I had.
+#
+#
+# Mert Gerdan 14/04/2019
+#
+###
+
 
 import os
 import sys
@@ -49,6 +50,10 @@ def main():
 
 
 def train(args):
+    ## Aim for at least 2 epochs, with a dataset of around 30k images for training.
+    ## Benchmarked a 500x500 style image on Intel Xeon E5@2.3Ghz v3 CPU. Took 5.91(avg) seconds to train on 1 image.
+    ## 10/10 would not recommend CPU training. 2 epochs on 80k images took 6 days of training.
+    ## An Nvidia GPU speeds it up roughly 49-70x, depending on the model, so go for that.
     check_paths(args)
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
