@@ -2,8 +2,10 @@
 
 Artistic Neural Style Slideshow with Pytorch (ANSS)
 
-ANSS was designed as an implementation of the Pytorch implementation of MSG-Net and Neural Style. It sets up a realtime presentation where you can cycle between different style images and use the camera to receive input, which will be customized on the background.
+ANSS was designed as an implementation of the Pytorch implementation of MSG-Net and Neural Style. It sets up a realtime presentation where you can cycle between different style images and use the camera to receive input, which will be customized on the background. I'm using a pretrained net for this project, this project uses the model to create an interactive Photo Booth where you can stylize your photos real time.
 
+![alt text](https://analyticsindiamag.com/wp-content/uploads/2020/06/1_kOQOZxBDNw4lI757soTEyQ.png)
+Image provided as an example of what Neural Style Transfer does to a photo.
 
 
 **Table of Contents**
