@@ -38,7 +38,7 @@ In order to train your own model for stylizing, you have got to download a datas
 ```bash
 	python3 main.py train --epochs 4
 ```
-An epoch value of at least 2 is recommended. Training is computationally expensive, don't try with a CPU if you have a certain desire of waiting a couple weeks.
+An epoch value of at least 2 is recommended. Training is computationally expensive, don't try with a CPU if you don't have a certain desire of waiting a couple weeks.
 
 * If you would like to customize styles, set `--style-folder path/to/your/styles`. More options:
 	* `--style-folder`: path to the folder style images.
