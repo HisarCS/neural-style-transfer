@@ -9,8 +9,8 @@ Image provided as an example of what Neural Style Transfer does to a photo.
 
 
 **Table of Contents**
-* [Stylize Single Images with Pre-Trained Model](stylize-single-images-with-pre-trained-model)
-* [Setup presentation-mode](setup-presentation-mode)
+* [Stylize Single Images with Pre-Trained Model](#stylize-single-images-with-pre-trained-model)
+* [Setup presentation-mode](#setup-presentation-mode)
 * [Train a new model](#train-a-new-model)
 * [How It Works](#how-it-works)
 * [Acknowledgements](#acknowledgements)
